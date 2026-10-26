@@ -5,7 +5,7 @@ Capture task context and resume it in another coding agent.
 
 | Maintenance | Dormant |
 |---|---|
-| Version | 0.2.8 |
+| Version | 0.2.9 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/agent-handoff-cck) |

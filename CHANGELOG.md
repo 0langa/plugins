@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-26 (v1.1.1)
+
+- Apply the approved Folded Crest icons and logos to all nine plugins and their marketplace entries.
+- Include editable SVG sources alongside the PNG artwork.
+- Publish nine artwork patch releases and align Computer Custom's theme color with its new pink logo.
+
 ## 2026-10-26 (v1.1.0)
 
 - Rename the repository to 0langa/plugins and display 0langa’s Plugins in Codex while preserving the marketplace ID 0langas-plugins.

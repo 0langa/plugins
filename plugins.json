@@ -4,7 +4,7 @@
     "name": "0langas-plugins",
     "displayName": "0langa’s Plugins",
     "repository": "https://github.com/0langa/plugins",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Plugins I build for my own workflow and share publicly."
   },
   "plugins": [
@@ -13,7 +13,7 @@
       "displayName": "Addonry",
       "description": "Build and test personal Chrome and Firefox extensions.",
       "repository": "https://github.com/0langa/Addonry",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -40,8 +40,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.3.3",
-        "sha": "a24d1e9d934e8fc4ef8a6c8749696f7f0ada5250"
+        "ref": "v0.3.4",
+        "sha": "b7539b7369cd86ba31eb1d6f7a0627117425c8a7"
       },
       "category": "Developer Tools",
       "platforms": "Windows is required by the bundled Windows PowerShell launcher. Chrome and Firefox are extension targets, not supported host operating systems.",
@@ -65,7 +65,7 @@
       "displayName": "Computer Custom",
       "description": "Queue Windows desktop actions with a countdown and shared pause controls.",
       "repository": "https://github.com/0langa/computer-custom",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -87,8 +87,8 @@
         "claude-code": "maintained"
       },
       "source": {
-        "ref": "v0.3.0",
-        "sha": "dd24631180a73eb9f6829fcaeef749593f2df7b3",
+        "ref": "v0.3.1",
+        "sha": "ed627e79f1a7bc041b4ca1d3b818b660fe34492c",
         "path": "dist/computer-custom"
       },
       "category": "Developer Tools",
@@ -113,7 +113,7 @@
       "displayName": "RECALL",
       "description": "Keep project decisions and useful context in a local memory store.",
       "repository": "https://github.com/0langa/RECALL",
-      "version": "1.6.2",
+      "version": "1.6.3",
       "author": "RECALL contributors",
       "license": "Apache-2.0",
       "providers": [
@@ -140,8 +140,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v1.6.2",
-        "sha": "205397d3975bdeba74a55246a7908d26a0bc1be7",
+        "ref": "v1.6.3",
+        "sha": "81dc9536e7954719666d780ac5d0b4f1003c1e50",
         "path": "plugins/recall"
       },
       "category": "Productivity",
@@ -166,7 +166,7 @@
       "displayName": "Web.de Access",
       "description": "Read, organize, draft, and send mail from your WEB.DE account.",
       "repository": "https://github.com/0langa/Web.de-Access",
-      "version": "0.2.14",
+      "version": "0.2.15",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -193,8 +193,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.2.14",
-        "sha": "393102a0030f44df05191ca02cfdc718af400d8f"
+        "ref": "v0.2.15",
+        "sha": "e0ba5be29d6daea389c6f48800403d62593c282b"
       },
       "category": "Productivity",
       "platforms": "Requires Node.js and an operating-system credential store supported by keytar. Windows is the release-test platform; other platforms may need native dependencies.",
@@ -219,7 +219,7 @@
       "displayName": "Agent Handoff",
       "description": "Capture task context and resume it in another coding agent.",
       "repository": "https://github.com/0langa/agent-handoff-cck",
-      "version": "0.2.8",
+      "version": "0.2.9",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -246,8 +246,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.2.8",
-        "sha": "7946fe2d9c713a973959e0f721f7d9bf83cd9b27"
+        "ref": "v0.2.9",
+        "sha": "140a8d95d55ca8804214959742682ddec5fa5637"
       },
       "category": "Productivity",
       "platforms": "Local Python plugin. The legacy Kimi launcher includes a Windows-specific wrapper.",
@@ -270,7 +270,7 @@
       "displayName": "Customization Control",
       "description": "Find duplicate customizations and repair local agent configuration.",
       "repository": "https://github.com/0langa/customization-control",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -297,8 +297,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.1.9",
-        "sha": "237ab1ffdfc60e9ee96bc7e28a457ff65ade4094"
+        "ref": "v0.1.10",
+        "sha": "6ca65f667854d148e0a6fbaab3afd0ecb6cd8c29"
       },
       "category": "Coding",
       "platforms": "Windows PowerShell helpers and a Python helper for other platforms. Discovery rules may not reflect newer client layouts.",
@@ -321,7 +321,7 @@
       "displayName": "Plugin Evaluation Kimi",
       "description": "Evaluate plugins and skills with static checks and an optional model judge.",
       "repository": "https://github.com/0langa/plugin-evaluation-kimi",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "author": "PluginEval contributors",
       "license": "MIT",
       "providers": [
@@ -348,8 +348,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.1.4",
-        "sha": "60200cd1b4fdfa372f54394cc5024213e23510df"
+        "ref": "v0.1.5",
+        "sha": "68601a5ed3b3fe4006ade8d562bb6a28000b1933"
       },
       "category": "Coding",
       "platforms": "Python-based local evaluator. Kimi/Moonshot is the default model backend; Codex is an optional backend.",
@@ -374,7 +374,7 @@
       "displayName": "Plugin Forge",
       "description": "Generate plugin manifests and coordinate releases across coding agents.",
       "repository": "https://github.com/0langa/plugin-forge",
-      "version": "0.2.16",
+      "version": "0.2.17",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -401,8 +401,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.2.16",
-        "sha": "df91117a645d0e26b4353c0f779ab7653dd237ec"
+        "ref": "v0.2.17",
+        "sha": "1f900672d5aa3c65e510e5b6960e74d6430e4d6f"
       },
       "category": "Developer Tools",
       "platforms": "Python-based local authoring tool. Client installation details can drift as host applications change.",
@@ -427,7 +427,7 @@
       "displayName": "Usage Pulse",
       "description": "View local reports of your coding-agent activity.",
       "repository": "https://github.com/0langa/usage-pulse",
-      "version": "0.1.12",
+      "version": "0.1.13",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -454,8 +454,8 @@
         "kimi-code": "legacy"
       },
       "source": {
-        "ref": "v0.1.12",
-        "sha": "ac33d1495328fdfc0122c32877cc5c2f65efe0ef"
+        "ref": "v0.1.13",
+        "sha": "bb8009bc54f4a39a514cfeede38d296bcf5491ae"
       },
       "category": "Productivity",
       "platforms": "Local Python plugin with host lifecycle hooks. Hook availability varies by client and execution environment.",

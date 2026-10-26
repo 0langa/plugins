@@ -5,7 +5,7 @@ Read, organize, draft, and send mail from your WEB.DE account.
 
 | Maintenance | Maintained |
 |---|---|
-| Version | 0.2.14 |
+| Version | 0.2.15 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/Web.de-Access) |

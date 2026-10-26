@@ -5,7 +5,7 @@ Find duplicate customizations and repair local agent configuration.
 
 | Maintenance | Dormant |
 |---|---|
-| Version | 0.1.9 |
+| Version | 0.1.10 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/customization-control) |

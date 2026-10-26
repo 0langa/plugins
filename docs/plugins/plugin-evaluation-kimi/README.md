@@ -5,7 +5,7 @@ Evaluate plugins and skills with static checks and an optional model judge.
 
 | Maintenance | Dormant |
 |---|---|
-| Version | 0.1.4 |
+| Version | 0.1.5 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/plugin-evaluation-kimi) |

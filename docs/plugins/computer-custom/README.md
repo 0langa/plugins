@@ -5,7 +5,7 @@ Queue Windows desktop actions with a countdown and shared pause controls.
 
 | Maintenance | Maintained |
 |---|---|
-| Version | 0.3.0 |
+| Version | 0.3.1 |
 | Clients | Codex, Claude Code |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/computer-custom) |

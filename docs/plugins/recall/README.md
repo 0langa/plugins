@@ -5,7 +5,7 @@ Keep project decisions and useful context in a local memory store.
 
 | Maintenance | Maintained |
 |---|---|
-| Version | 1.6.2 |
+| Version | 1.6.3 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | Apache-2.0 |
 | Source | [Repository](https://github.com/0langa/RECALL) |

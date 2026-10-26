@@ -5,7 +5,7 @@ Build and test personal Chrome and Firefox extensions.
 
 | Maintenance | Maintained |
 |---|---|
-| Version | 0.3.3 |
+| Version | 0.3.4 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/Addonry) |

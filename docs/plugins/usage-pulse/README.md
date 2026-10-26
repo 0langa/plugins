@@ -5,7 +5,7 @@ View local reports of your coding-agent activity.
 
 | Maintenance | Dormant |
 |---|---|
-| Version | 0.1.12 |
+| Version | 0.1.13 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/usage-pulse) |

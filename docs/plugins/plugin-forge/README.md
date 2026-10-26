@@ -5,7 +5,7 @@ Generate plugin manifests and coordinate releases across coding agents.
 
 | Maintenance | Dormant |
 |---|---|
-| Version | 0.2.16 |
+| Version | 0.2.17 |
 | Clients | Codex, Claude Code, Kimi Code (legacy) |
 | License | MIT |
 | Source | [Repository](https://github.com/0langa/plugin-forge) |
