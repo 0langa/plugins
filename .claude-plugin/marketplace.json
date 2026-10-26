@@ -116,12 +116,12 @@
         "source": "git-subdir",
         "url": "https://github.com/0langa/computer-custom.git",
         "path": "dist/computer-custom",
-        "ref": "v0.2.3",
-        "sha": "0aa0e9f840a0c5adfd2313b58b0bdfde3e6e1ad4"
+        "ref": "v0.3.0",
+        "sha": "dd24631180a73eb9f6829fcaeef749593f2df7b3"
       },
       "displayName": "Computer Custom",
-      "description": "Self-contained Windows computer control with policy gates, native helper, saved flows, and no provider runtime dependency.",
-      "version": "0.2.3",
+      "description": "Prepared Windows desktop automation with shared batches, countdown/Snooze, and UIAccess for Codex and Claude Code.",
+      "version": "0.3.0",
       "repository": "https://github.com/0langa/computer-custom"
     }
   ]

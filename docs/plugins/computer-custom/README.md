@@ -7,7 +7,11 @@ Marketplace entry for `computer-custom`.
 | Repository | `https://github.com/0langa/computer-custom` |
 | Local source | `plugins/computer-custom/dist/computer-custom` |
 | Providers | Codex, Claude Code |
-| Version | `0.2.1` |
+| Version | `0.3.0` |
+
+Prepare Windows desktop actions in a shared queue with a visible countdown,
+Snooze, and Cancel. Use Computer Custom for prepared batches, UIAccess, or saved
+flows; prefer bundled Computer for ordinary desktop work.
 
 ## Install
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-26 (v1.0.27)
+
+- Released Computer Custom 0.3.0 with prepared desktop batches, a shared queue
+  across clients, countdown/Snooze/Cancel, isolated native workers, and complete
+  helper packaging.
+- Updated the Codex and Claude Code catalogs to the immutable 0.3.0 release tag
+  and commit, with the matching submodule and plugin documentation.
+
 ## 2026-10-15 (v1.0.26)
 
 - Released six plugin updates: RECALL 1.6.2, Web.de Access 0.2.12, Agent Handoff 0.2.7, Customization Control 0.1.8, Plugin Forge 0.2.15, and Usage Pulse 0.1.11.

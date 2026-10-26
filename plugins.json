@@ -211,9 +211,9 @@
     {
       "name": "computer-custom",
       "displayName": "Computer Custom",
-      "description": "Policy-controlled Windows Computer Use wrapper for Codex and Claude Code.",
+      "description": "Prepared Windows desktop automation with shared batches, countdown/Snooze, and UIAccess for Codex and Claude Code.",
       "repository": "https://github.com/0langa/computer-custom",
-      "version": "0.2.3",
+      "version": "0.3.0",
       "author": "0langa",
       "license": "MIT",
       "providers": [
