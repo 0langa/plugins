@@ -1,11 +1,19 @@
 {
+  "schemaVersion": 1,
+  "marketplace": {
+    "name": "0langas-plugins",
+    "displayName": "0langa’s Plugins",
+    "repository": "https://github.com/0langa/plugins",
+    "version": "1.1.0",
+    "description": "Plugins I build for my own workflow and share publicly."
+  },
   "plugins": [
     {
-      "name": "webde-access",
-      "displayName": "Web.de Access",
-      "description": "Private Web.de mailbox connector for reading, drafting, sending, and managing mail.",
-      "repository": "https://github.com/0langa/Web.de-Access",
-      "version": "0.2.12",
+      "name": "addonry",
+      "displayName": "Addonry",
+      "description": "Build and test personal Chrome and Firefox extensions.",
+      "repository": "https://github.com/0langa/Addonry",
+      "version": "0.3.3",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -13,23 +21,97 @@
         "claude-code",
         "kimi-code"
       ],
-      "pluginRoot": "plugins/webde-access",
+      "pluginRoot": "plugins/addonry",
       "installPaths": {
         "codex": ".codex-plugin/plugin.json",
         "claude-code": ".claude-plugin/plugin.json",
         "kimi-code": "kimi.plugin.json"
       },
       "installCommands": {
-        "codex": "codex plugin add webde-access@0langas-plugins",
-        "claude-code": "claude plugin install webde-access@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\webde-access"
+        "codex": "codex plugin add addonry@0langas-plugins",
+        "claude-code": "claude plugin install addonry@0langas-plugins",
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\addonry"
+      },
+      "maintenance": "maintained",
+      "providerSupport": {
+        "codex": "maintained",
+        "claude-code": "maintained",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.3.3",
+        "sha": "a24d1e9d934e8fc4ef8a6c8749696f7f0ada5250"
+      },
+      "category": "Developer Tools",
+      "platforms": "Windows is required by the bundled Windows PowerShell launcher. Chrome and Firefox are extension targets, not supported host operating systems.",
+      "prerequisites": [
+        "Windows PowerShell",
+        "Python, Node.js, and Git",
+        "Chrome or Firefox for the extension being tested"
+      ],
+      "setup": [
+        "Install the plugin, start a new session, then explicitly invoke Addonry. Its workflow starts only when named or invoked.",
+        "Choose Chrome, Firefox, or both. Generated projects and ZIP packages stay local until you request publication."
+      ],
+      "example": "Use Addonry to build a Chrome and Firefox extension that copies selected links.",
+      "assets": {
+        "icon": "assets/addonry/icon.png",
+        "logo": "assets/addonry/logo.png"
+      }
+    },
+    {
+      "name": "computer-custom",
+      "displayName": "Computer Custom",
+      "description": "Queue Windows desktop actions with a countdown and shared pause controls.",
+      "repository": "https://github.com/0langa/computer-custom",
+      "version": "0.3.0",
+      "author": "0langa",
+      "license": "MIT",
+      "providers": [
+        "codex",
+        "claude-code"
+      ],
+      "pluginRoot": "plugins/computer-custom/dist/computer-custom",
+      "installPaths": {
+        "codex": ".codex-plugin/plugin.json",
+        "claude-code": ".claude-plugin/plugin.json"
+      },
+      "installCommands": {
+        "codex": "codex plugin add computer-custom@0langas-plugins",
+        "claude-code": "claude plugin install computer-custom@0langas-plugins"
+      },
+      "maintenance": "maintained",
+      "providerSupport": {
+        "codex": "maintained",
+        "claude-code": "maintained"
+      },
+      "source": {
+        "ref": "v0.3.0",
+        "sha": "dd24631180a73eb9f6829fcaeef749593f2df7b3",
+        "path": "dist/computer-custom"
+      },
+      "category": "Developer Tools",
+      "platforms": "Windows only. The optional signed UIAccess helper has additional setup requirements.",
+      "prerequisites": [
+        "Windows",
+        "Node.js and Git",
+        "Optional: the signed UIAccess helper for elevated application windows"
+      ],
+      "setup": [
+        "Start a new session and explicitly select Computer Custom for prepared batches, shared Snooze, UIAccess, or saved local flows.",
+        "Use the bundled Computer tools for ordinary desktop tasks. See the source README for UIAccess setup and input behavior."
+      ],
+      "example": "Use Computer Custom to prepare a desktop batch with a visible countdown.",
+      "assets": {
+        "icon": "assets/computer-custom/icon.png",
+        "logo": "assets/computer-custom/logo.png"
       }
     },
     {
       "name": "recall",
       "displayName": "RECALL",
-      "description": "Local-first project memory shared across Codex, Claude Code, and Kimi Code.",
+      "description": "Keep project decisions and useful context in a local memory store.",
       "repository": "https://github.com/0langa/RECALL",
       "version": "1.6.2",
       "author": "RECALL contributors",
@@ -48,42 +130,96 @@
       "installCommands": {
         "codex": "codex plugin add recall@0langas-plugins",
         "claude-code": "claude plugin install recall@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\RECALL\\plugins\\recall"
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\RECALL\\plugins\\recall"
+      },
+      "maintenance": "maintained",
+      "providerSupport": {
+        "codex": "maintained",
+        "claude-code": "maintained",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v1.6.2",
+        "sha": "205397d3975bdeba74a55246a7908d26a0bc1be7",
+        "path": "plugins/recall"
+      },
+      "category": "Productivity",
+      "platforms": "Python-based local plugin. Platform-specific setup is documented in the source repository; this release does not certify every operating system.",
+      "prerequisites": [
+        "Python 3.11 or newer",
+        "Git",
+        "A local project folder"
+      ],
+      "setup": [
+        "Start a new session in your project and ask RECALL to initialize it.",
+        "Memory stays in the project-local .recall store. The plugin supplies its MCP configuration; do not add a second manual server entry."
+      ],
+      "example": "Use RECALL to remember this project decision and the reasons behind it.",
+      "assets": {
+        "icon": "assets/recall/icon.png",
+        "logo": "assets/recall/logo.png"
       }
     },
     {
-      "name": "plugin-evaluation-kimi",
-      "displayName": "Plugin Evaluation Kimi",
-      "description": "Three-layer quality evaluation for agent plugins and skills using Kimi by default.",
-      "repository": "https://github.com/0langa/plugin-evaluation-kimi",
-      "version": "0.1.3",
-      "author": "PluginEval contributors",
+      "name": "webde-access",
+      "displayName": "Web.de Access",
+      "description": "Read, organize, draft, and send mail from your WEB.DE account.",
+      "repository": "https://github.com/0langa/Web.de-Access",
+      "version": "0.2.14",
+      "author": "0langa",
       "license": "MIT",
       "providers": [
         "codex",
         "claude-code",
         "kimi-code"
       ],
-      "pluginRoot": "plugins/plugin-evaluation-kimi",
+      "pluginRoot": "plugins/webde-access",
       "installPaths": {
         "codex": ".codex-plugin/plugin.json",
         "claude-code": ".claude-plugin/plugin.json",
         "kimi-code": "kimi.plugin.json"
       },
       "installCommands": {
-        "codex": "codex plugin add plugin-evaluation-kimi@0langas-plugins",
-        "claude-code": "claude plugin install plugin-evaluation-kimi@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\plugin-evaluation-kimi"
+        "codex": "codex plugin add webde-access@0langas-plugins",
+        "claude-code": "claude plugin install webde-access@0langas-plugins",
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\webde-access"
+      },
+      "maintenance": "maintained",
+      "providerSupport": {
+        "codex": "maintained",
+        "claude-code": "maintained",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.2.14",
+        "sha": "393102a0030f44df05191ca02cfdc718af400d8f"
+      },
+      "category": "Productivity",
+      "platforms": "Requires Node.js and an operating-system credential store supported by keytar. Windows is the release-test platform; other platforms may need native dependencies.",
+      "prerequisites": [
+        "A WEB.DE account with IMAP access enabled",
+        "An application password when required by your account",
+        "Node.js 20.19 or newer and Git"
+      ],
+      "setup": [
+        "Enable IMAP in WEB.DE. Store credentials through the plugin's auth:login helper, following the source README.",
+        "Credentials belong in the operating-system credential manager, never in marketplace files or chat. Install dependencies in the plugin directory if the first-start helper requests them.",
+        "Ask the plugin to read or draft a message. Sending mail is a separate action that you explicitly request."
+      ],
+      "example": "Find unread WEB.DE messages from today and draft a reply to the latest one.",
+      "assets": {
+        "icon": "assets/webde-access/icon.png",
+        "logo": "assets/webde-access/logo.png"
       }
     },
     {
       "name": "agent-handoff",
       "displayName": "Agent Handoff",
-      "description": "Cross-agent handoff plugin for Codex, Claude Code, and Kimi Code.",
+      "description": "Capture task context and resume it in another coding agent.",
       "repository": "https://github.com/0langa/agent-handoff-cck",
-      "version": "0.2.7",
+      "version": "0.2.8",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -100,16 +236,41 @@
       "installCommands": {
         "codex": "codex plugin add agent-handoff@0langas-plugins",
         "claude-code": "claude plugin install agent-handoff@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\agent-handoff"
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\agent-handoff"
+      },
+      "maintenance": "dormant",
+      "providerSupport": {
+        "codex": "dormant",
+        "claude-code": "dormant",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.2.8",
+        "sha": "7946fe2d9c713a973959e0f721f7d9bf83cd9b27"
+      },
+      "category": "Productivity",
+      "platforms": "Local Python plugin. The legacy Kimi launcher includes a Windows-specific wrapper.",
+      "prerequisites": [
+        "Python 3.10 or newer",
+        "uv and Git"
+      ],
+      "setup": [
+        "Install the plugin and start a new session. Ask it to capture or resume a handoff.",
+        "Handoff records are stored locally under .handoff. The source repository is public; no private-repository authentication is required."
+      ],
+      "example": "Create a handoff so I can continue this task in Claude Code.",
+      "assets": {
+        "icon": "assets/agent-handoff/icon.png",
+        "logo": "assets/agent-handoff/logo.png"
       }
     },
     {
       "name": "customization-control",
       "displayName": "Customization Control",
-      "description": "Audit, deduplicate, repair, sync, and manage agent customizations across Codex, Claude Code, and Kimi Code.",
+      "description": "Find duplicate customizations and repair local agent configuration.",
       "repository": "https://github.com/0langa/customization-control",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -126,16 +287,94 @@
       "installCommands": {
         "codex": "codex plugin add customization-control@0langas-plugins",
         "claude-code": "claude plugin install customization-control@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\customization-control"
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\customization-control"
+      },
+      "maintenance": "dormant",
+      "providerSupport": {
+        "codex": "dormant",
+        "claude-code": "dormant",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.1.9",
+        "sha": "237ab1ffdfc60e9ee96bc7e28a457ff65ade4094"
+      },
+      "category": "Coding",
+      "platforms": "Windows PowerShell helpers and a Python helper for other platforms. Discovery rules may not reflect newer client layouts.",
+      "prerequisites": [
+        "PowerShell on Windows, or Python on macOS/Linux",
+        "Local access to the relevant client configuration"
+      ],
+      "setup": [
+        "Start with a read-only customization audit. Review the proposed changes before applying repairs or deduplication.",
+        "Prefer each client's native plugin manager for routine installs and removal. This dormant plugin retains its older cross-provider audit and repair workflows."
+      ],
+      "example": "Audit my local agent customizations and list duplicates without changing anything.",
+      "assets": {
+        "icon": "assets/customization-control/icon.png",
+        "logo": "assets/customization-control/logo.png"
+      }
+    },
+    {
+      "name": "plugin-evaluation-kimi",
+      "displayName": "Plugin Evaluation Kimi",
+      "description": "Evaluate plugins and skills with static checks and an optional model judge.",
+      "repository": "https://github.com/0langa/plugin-evaluation-kimi",
+      "version": "0.1.4",
+      "author": "PluginEval contributors",
+      "license": "MIT",
+      "providers": [
+        "codex",
+        "claude-code",
+        "kimi-code"
+      ],
+      "pluginRoot": "plugins/plugin-evaluation-kimi",
+      "installPaths": {
+        "codex": ".codex-plugin/plugin.json",
+        "claude-code": ".claude-plugin/plugin.json",
+        "kimi-code": "kimi.plugin.json"
+      },
+      "installCommands": {
+        "codex": "codex plugin add plugin-evaluation-kimi@0langas-plugins",
+        "claude-code": "claude plugin install plugin-evaluation-kimi@0langas-plugins",
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\plugin-evaluation-kimi"
+      },
+      "maintenance": "dormant",
+      "providerSupport": {
+        "codex": "dormant",
+        "claude-code": "dormant",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.1.4",
+        "sha": "60200cd1b4fdfa372f54394cc5024213e23510df"
+      },
+      "category": "Coding",
+      "platforms": "Python-based local evaluator. Kimi/Moonshot is the default model backend; Codex is an optional backend.",
+      "prerequisites": [
+        "Python 3.12 or newer",
+        "uv and Git",
+        "For optional model judging: Kimi API credentials or an authenticated Codex CLI"
+      ],
+      "setup": [
+        "Use quick-depth static evaluation first; it makes no model calls.",
+        "Kimi judging reads PLUGIN_EVAL_KIMI_API_KEY and can consume paid API credits. Select --provider codex for the optional Codex backend, which uses its account allowance.",
+        "Review provider and cost settings before requesting model judging or simulations."
+      ],
+      "example": "Run only the quick static checks on this skill and explain the findings.",
+      "assets": {
+        "icon": "assets/plugin-evaluation-kimi/icon.png",
+        "logo": "assets/plugin-evaluation-kimi/logo.png"
       }
     },
     {
       "name": "plugin-forge",
       "displayName": "Plugin Forge",
-      "description": "Multi-provider plugin lifecycle automation for manifest generation, installs, versions, and marketplace state.",
+      "description": "Generate plugin manifests and coordinate releases across coding agents.",
       "repository": "https://github.com/0langa/plugin-forge",
-      "version": "0.2.15",
+      "version": "0.2.16",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -152,16 +391,43 @@
       "installCommands": {
         "codex": "codex plugin add plugin-forge@0langas-plugins",
         "claude-code": "claude plugin install plugin-forge@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\plugin-forge"
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\plugin-forge"
+      },
+      "maintenance": "dormant",
+      "providerSupport": {
+        "codex": "dormant",
+        "claude-code": "dormant",
+        "kimi-code": "legacy"
+      },
+      "source": {
+        "ref": "v0.2.16",
+        "sha": "df91117a645d0e26b4353c0f779ab7653dd237ec"
+      },
+      "category": "Developer Tools",
+      "platforms": "Python-based local authoring tool. Client installation details can drift as host applications change.",
+      "prerequisites": [
+        "Python 3.11 or newer",
+        "uv and Git",
+        "A plugin repository using forge.yaml"
+      ],
+      "setup": [
+        "Use an existing Forge-managed plugin repository and inspect its status before compiling.",
+        "Forge still covers cross-provider authoring and release metadata. Native client plugin managers overlap with its installation functions.",
+        "For this marketplace, run its catalog generator after changing the registry; do not hand-edit generated catalogs."
+      ],
+      "example": "Inspect this Forge-managed plugin and explain any manifest drift.",
+      "assets": {
+        "icon": "assets/plugin-forge/icon.png",
+        "logo": "assets/plugin-forge/logo.png"
       }
     },
     {
       "name": "usage-pulse",
       "displayName": "Usage Pulse",
-      "description": "Local passive usage telemetry for Codex, Claude Code, and Kimi Code sessions.",
+      "description": "View local reports of your coding-agent activity.",
       "repository": "https://github.com/0langa/usage-pulse",
-      "version": "0.1.11",
+      "version": "0.1.12",
       "author": "0langa",
       "license": "MIT",
       "providers": [
@@ -178,56 +444,34 @@
       "installCommands": {
         "codex": "codex plugin add usage-pulse@0langas-plugins",
         "claude-code": "claude plugin install usage-pulse@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\usage-pulse"
-      }
-    },
-    {
-      "name": "addonry",
-      "displayName": "Addonry",
-      "description": "Manual-only tri-client plugin for acceptance-driven Chrome and Firefox extension development, repair-loop verification, and local packaging.",
-      "repository": "https://github.com/0langa/Addonry",
-      "version": "0.3.2",
-      "author": "0langa",
-      "license": "MIT",
-      "providers": [
-        "codex",
-        "claude-code",
-        "kimi-code"
-      ],
-      "pluginRoot": "plugins/addonry",
-      "installPaths": {
-        "codex": ".codex-plugin/plugin.json",
-        "claude-code": ".claude-plugin/plugin.json",
-        "kimi-code": "kimi.plugin.json"
+        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\plugins\\kimi-marketplace.json",
+        "kimi-code": "/plugins install C:\\path\\to\\plugins\\plugins\\usage-pulse"
       },
-      "installCommands": {
-        "codex": "codex plugin add addonry@0langas-plugins",
-        "claude-code": "claude plugin install addonry@0langas-plugins",
-        "kimi-code-marketplace": "/plugins marketplace C:\\path\\to\\0langas-plugin-marketplace\\kimi-marketplace.json",
-        "kimi-code": "/plugins install C:\\path\\to\\0langas-plugin-marketplace\\plugins\\addonry"
-      }
-    },
-    {
-      "name": "computer-custom",
-      "displayName": "Computer Custom",
-      "description": "Prepared Windows desktop automation with shared batches, countdown/Snooze, and UIAccess for Codex and Claude Code.",
-      "repository": "https://github.com/0langa/computer-custom",
-      "version": "0.3.0",
-      "author": "0langa",
-      "license": "MIT",
-      "providers": [
-        "codex",
-        "claude-code"
-      ],
-      "pluginRoot": "plugins/computer-custom/dist/computer-custom",
-      "installPaths": {
-        "codex": ".codex-plugin/plugin.json",
-        "claude-code": ".claude-plugin/plugin.json"
+      "maintenance": "dormant",
+      "providerSupport": {
+        "codex": "dormant",
+        "claude-code": "dormant",
+        "kimi-code": "legacy"
       },
-      "installCommands": {
-        "codex": "codex plugin add computer-custom@0langas-plugins",
-        "claude-code": "claude plugin install computer-custom@0langas-plugins"
+      "source": {
+        "ref": "v0.1.12",
+        "sha": "ac33d1495328fdfc0122c32877cc5c2f65efe0ef"
+      },
+      "category": "Productivity",
+      "platforms": "Local Python plugin with host lifecycle hooks. Hook availability varies by client and execution environment.",
+      "prerequisites": [
+        "Python 3.11 or newer",
+        "uv and Git",
+        "A local host that supports the bundled hooks"
+      ],
+      "setup": [
+        "Install the plugin and start a new session. It records local activity counters through host hooks.",
+        "Reports read the local Usage Pulse database. It does not store prompt bodies, sync data to a cloud service, or calculate pay-as-you-go charges."
+      ],
+      "example": "Show my Usage Pulse activity report for today.",
+      "assets": {
+        "icon": "assets/usage-pulse/icon.png",
+        "logo": "assets/usage-pulse/logo.png"
       }
     }
   ]

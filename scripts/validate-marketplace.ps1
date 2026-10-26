@@ -96,6 +96,9 @@ function Test-MarketplaceSource([object]$Entry, [object]$Plugin, [string]$Surfac
 
     $ref = [string]$source.ref
     $sha = [string]$source.sha
+    if ($ref -ne [string]$Plugin.source.ref -or $sha -ne [string]$Plugin.source.sha) {
+        Add-ValidationError "$name $Surface source pin disagrees with plugins.json"
+    }
     if ([string]::IsNullOrWhiteSpace($ref)) {
         Add-ValidationError "$name $Surface Git source must pin a release ref"
     }
@@ -153,6 +156,8 @@ function Read-PluginManifest([string]$PluginRoot, [string]$RelativePath, [string
         return $null
     }
 }
+
+& (Join-Path $PSScriptRoot "generate-marketplace.ps1") -Check
 
 $registry = Read-JsonFile "plugins.json"
 $codexMarketplace = Read-JsonFile ".agents/plugins/marketplace.json"
@@ -286,4 +291,4 @@ if ($errors.Count -gt 0) {
 }
 
 $scope = if ($CatalogOnly) { "catalog-only" } else { "full" }
-Write-Host "Marketplace validation passed ($scope): $(@($registry.plugins).Count) plugins, 3 provider catalogs, no high-confidence secrets."
+Write-Verbose "Validated $scope marketplace metadata."

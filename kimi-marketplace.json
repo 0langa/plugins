@@ -2,9 +2,9 @@
   "version": "2",
   "plugins": [
     {
-      "id": "webde-access",
-      "displayName": "Web.de Access",
-      "source": "./plugins/webde-access"
+      "id": "addonry",
+      "displayName": "Addonry",
+      "source": "./plugins/addonry"
     },
     {
       "id": "recall",
@@ -12,34 +12,34 @@
       "source": "./plugins/RECALL/plugins/recall"
     },
     {
-      "id": "plugin-evaluation-kimi",
-      "displayName": "Plugin Evaluation Kimi",
-      "source": "./plugins/plugin-evaluation-kimi"
+      "id": "webde-access",
+      "displayName": "Web.de Access",
+      "source": "./plugins/webde-access"
     },
     {
       "id": "agent-handoff",
-      "displayName": "Agent Handoff",
+      "displayName": "Agent Handoff (Dormant)",
       "source": "./plugins/agent-handoff"
     },
     {
       "id": "customization-control",
-      "displayName": "Customization Control",
+      "displayName": "Customization Control (Dormant)",
       "source": "./plugins/customization-control"
     },
     {
+      "id": "plugin-evaluation-kimi",
+      "displayName": "Plugin Evaluation Kimi (Dormant)",
+      "source": "./plugins/plugin-evaluation-kimi"
+    },
+    {
       "id": "plugin-forge",
-      "displayName": "Plugin Forge",
+      "displayName": "Plugin Forge (Dormant)",
       "source": "./plugins/plugin-forge"
     },
     {
       "id": "usage-pulse",
-      "displayName": "Usage Pulse",
+      "displayName": "Usage Pulse (Dormant)",
       "source": "./plugins/usage-pulse"
-    },
-    {
-      "id": "addonry",
-      "displayName": "Addonry",
-      "source": "./plugins/addonry"
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Codex in ChatGPT / GPT-5.6 compatibility audit
 
+> Historical audit from 2026-07-12. These results describe that release and environment; see the [current plugin catalog](../README.md) for present maintenance and support information.
+
 Checked: 2026-07-12
 
 ## Result

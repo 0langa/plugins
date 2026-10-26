@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 (v1.1.0)
+
+- Rename the repository to 0langa/plugins and display 0langa’s Plugins in Codex while preserving the marketplace ID 0langas-plugins.
+- Organize four maintained plugins and five dormant plugins; retain all installable entries and label Kimi compatibility legacy.
+- Generate provider catalogs, installation examples, and plugin documentation from one registry.
+- Clarify setup and platform requirements, correct source documentation, and publish metadata patch releases for seven source packages.
+- Refresh Web.de Access dependencies in a follow-up patch after its release workflow reported dependency advisories.
+- Keep catalog tools quiet by default and exercise fresh-install and old-address compatibility in disposable client profiles.
+
 ## 2026-10-26 (v1.0.27)
 
 - Released Computer Custom 0.3.0 with prepared desktop batches, a shared queue

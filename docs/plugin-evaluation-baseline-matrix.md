@@ -2,7 +2,7 @@
 
 Purpose: record the first full PluginEval baseline for every plugin in this marketplace, then use later runs to measure drift and improvement. This file is a results ledger, not a quality gate.
 
-This is historical evidence from 2026-07-06. Version and drift fields describe that run, not current marketplace state. See `docs/codex-chatgpt-compatibility-2026-07-12.md` for current compatibility results.
+This is historical evidence from 2026-07-06. Version and drift fields describe that run, not current marketplace state. The [July compatibility audit](codex-chatgpt-compatibility-2026-07-12.md) is also historical. See the [current plugin catalog](../README.md) for present maintenance and support information.
 
 No evaluations were run while preparing this matrix.
 

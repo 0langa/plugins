@@ -19,6 +19,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Validate catalogs, manifests, assets, and secret hygiene
+      - name: Exercise catalog generation regressions
+        run: python -m unittest discover -s tests -q
+
+      - name: Check generated catalogs, manifests, assets, and secret hygiene
         shell: pwsh
         run: ./scripts/validate-marketplace.ps1
